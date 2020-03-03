@@ -19,10 +19,7 @@ const VideoItem = ({ video, onVideoSelect }) => {
                         <span>{video.snippet.channelTitle}</span>
                     </div>
 
-                    <div className="description">
-                        <p>{video.snippet.description}</p>
-                    </div>
-               </div>
+                </div>
 
            </div>
        </div>

@@ -1,18 +1,25 @@
 import React from 'react'
-import { Spinner } from 'reactstrap';
 
 const VideoDetail = ( {video} ) => {
 
-    if(!video) {
+    if (!video) {
         return(
-            <p><Spinner /> Loading...</p>
+            <p>Loading...</p>
         );
     }
 
+    const videoSrc = `https://www.youtube.com/embed/${video.id.videoId}`
+
     return(
         <div className="ui segment">
+
+            <div className="ui embed">
+                <iframe title="Youtube Video Player" src={videoSrc} />
+            </div>
+
             <h4 className="ui">{video.snippet.title}</h4>
             <p>{video.snippet.description}</p>
+            
         </div>
     )
 

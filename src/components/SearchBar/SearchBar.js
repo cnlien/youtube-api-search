@@ -18,23 +18,23 @@ class SearchBar extends React.Component {
     handleSearchSubmit = (e) => {
         e.preventDefault();
         this.props.onTermSubmit(this.state.term);
-        // TODO: CALL CALLBACK FROM PARENT COMPONENT
-
     }
 
 
     render() {
         return (
-            <div className="search-form">
-                <Form onSubmit={this.handleSearchSubmit}>
-                    <Input
-                        className="search-input"
-                        placeholder="Search Youtube Videos"
-                        input={this.state.term}
-                        onChange={this.handleInputChange}
-                    />
-                    <Button block className="search-button">Search</Button>
-                </Form>
+            <div className="ui segment">
+                <div className="search-form">
+                    <Form onSubmit={this.handleSearchSubmit}>
+                        <Input
+                            className="search-input"
+                            placeholder="Search Youtube Videos"
+                            input={this.state.term}
+                            onChange={this.handleInputChange}
+                        />
+                        <Button block className="search-button">Search</Button>
+                    </Form>
+                </div>
             </div>
         )
     }
