@@ -1,15 +1,9 @@
 .search-form {
-    display: flex;
-    margin-top: 20px;
-    
+       
     .search-input {
-        min-width: 80%;
-        margin: 0 1.5% 5px 0;
+        margin: 10px 0 ;
     }
 
     .search-button {
-        flex-basis: 15%;
-        margin: 0 1.5% 5px 0;
-        flex-grow: 1;
     }
 }
